@@ -13,12 +13,12 @@ const getNamTrung = (req, res) => {
   res.render("sample.ejs");
 };
 
-const postCreatUser = (req, res) => {
-  let email = req.body.email;
-  let name = req.body.name;
-  let city = req.body.city;
+const postCreatUser = async (req, res) => {
+  // let email = req.body.email;
+  // let name = req.body.name;
+  // let city = req.body.city;
 
-  // let { email, name, city } = req.body;
+  let { email, name, city } = req.body;
 
   console.log(
     "==== check ====",
@@ -30,14 +30,26 @@ const postCreatUser = (req, res) => {
     city
   );
 
-  connection.query(
+  let [results, fields] = await connection.query(
     ` INSERT INTO Users (email, name, city) VALUES (?, ?, ?)`,
-    [email, name, city],
-    function (err, results) {
-      console.log(results);
-      res.send("created new user succeed !");
-    }
+    [email, name, city]
   );
+
+  console.log("------- check results:", results);
+  res.send("Created user succeed !!!");
+
+  // ------ simple query to test ---------
+  // connection.query("SELECT * FROM Users", function (err, results, fields) {
+  //   console.log("----- results -----", results); // results contains rows returned by server
+  //   // console.log("----- fields -----", fields); // fields contains extra meta data about results, if available
+  // });
+
+  // ------- async await function -----------
+  // const [results, fields] = await connection.query("SELECT * FROM Users");
+};
+
+const getCreatPage = (req, res) => {
+  res.render("creatUser.ejs");
 };
 
 module.exports = {
@@ -45,4 +57,5 @@ module.exports = {
   getABC,
   getNamTrung,
   postCreatUser,
+  getCreatPage,
 };

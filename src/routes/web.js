@@ -3,6 +3,7 @@ const {
   getABC,
   getNamTrung,
   postCreatUser,
+  getCreatPage,
 } = require("../controllers/homeController");
 
 const express = require("express");
@@ -17,5 +18,7 @@ router.get("/abc", getABC);
 router.get("/namtrung", getNamTrung);
 
 router.post("/creat-user", postCreatUser);
+
+router.get("/creat", getCreatPage);
 
 module.exports = router;
