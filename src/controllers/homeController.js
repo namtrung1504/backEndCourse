@@ -14,8 +14,30 @@ const getNamTrung = (req, res) => {
 };
 
 const postCreatUser = (req, res) => {
-  console.log("=== req.body ===", req.body);
-  res.send("created");
+  let email = req.body.email;
+  let name = req.body.name;
+  let city = req.body.city;
+
+  // let { email, name, city } = req.body;
+
+  console.log(
+    "==== check ====",
+    "email=",
+    email,
+    "name = ",
+    name,
+    "city=",
+    city
+  );
+
+  connection.query(
+    ` INSERT INTO Users (email, name, city) VALUES (?, ?, ?)`,
+    [email, name, city],
+    function (err, results) {
+      console.log(results);
+      res.send("created new user succeed !");
+    }
+  );
 };
 
 module.exports = {
