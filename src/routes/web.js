@@ -4,6 +4,7 @@ const {
   getNamTrung,
   postCreatUser,
   getCreatPage,
+  getUpdatePage,
 } = require("../controllers/homeController");
 
 const express = require("express");
@@ -20,5 +21,7 @@ router.get("/namtrung", getNamTrung);
 router.post("/creat-user", postCreatUser);
 
 router.get("/creat", getCreatPage);
+
+router.get("/update", getUpdatePage);
 
 module.exports = router;
