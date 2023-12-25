@@ -13,8 +13,14 @@ const getNamTrung = (req, res) => {
   res.render("sample.ejs");
 };
 
+const postCreatUser = (req, res) => {
+  console.log("=== req.body ===", req.body);
+  res.send("created");
+};
+
 module.exports = {
   getHomePage,
   getABC,
   getNamTrung,
+  postCreatUser,
 };

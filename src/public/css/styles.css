@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -12,26 +11,218 @@
 .topnav {
     background-color: #333;
     overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
     background-color: #ddd;
     color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #04AA6D;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #3498db;
     color: white;
-  }
+}
+
+.form-add-user {
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+/* .input-group {
+    padding: 10px;
+    
+} */
+
+/* Reset some default styles for browsers */
+.input-group,
+.input-group * {
+    box-sizing: border-box;
+}
+
+/* Style the form container */
+.input-group {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Style the form */
+.input-group form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Style form inputs */
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style form button */
+.input-group button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Hover effect for the button */
+.input-group button:hover {
+    background-color: #45a049;
+}
+
+/* Style the link (e.g., "Forgot password?") */
+.input-group a {
+    text-decoration: none;
+    color: #3498db;
+    margin-top: 10px;
+}
+
+/* Hover effect for the link */
+.input-group a:hover {
+    color: #2980b9;
+}
+
+
+/* .button-add-user {
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+} */
+
+/* Reset some default styles for browsers */
+.button-add-user,
+.button-add-user:active,
+.button-add-user:focus {
+    outline: none;
+    border: none;
+    align-items: center;
+}
+
+/* Style the button */
+.button-add-user {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #4CAF50;
+    /* Green background color */
+    color: white;
+    /* White text color */
+    font-size: 15px;
+
+}
+
+/* Hover effect */
+.button-add-user:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+}
+
+/* Optional: Add more styles for active and focused states */
+.button-add-user:active,
+.button-add-user:focus {
+    background-color: #39843b;
+    /* Darker green when active or focused */
+}
+
+/* Reset some default styles for browsers */
+.field-set,
+.field-set * {
+    box-sizing: border-box;
+}
+
+/* Style the fieldset container */
+.field-set {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #3498db;
+    /* Border color */
+    border-radius: 10px;
+    background-color: #ecf0f1;
+    /* Background color */
+}
+
+/* Style the legend (optional) */
+.field-set legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #3498db;
+    /* Legend color */
+}
+
+/* Style form inputs within the fieldset */
+.field-set input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #bdc3c7;
+    /* Input border color */
+    border-radius: 6px;
+}
+
+/* Style form button within the fieldset */
+.field-set button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3498db;
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Hover effect for the button */
+.field-set button:hover {
+    background-color: #2980b9;
+    /* Darker blue on hover */
+}
+
+/* Style the link within the fieldset (e.g., "Forgot password?") */
+.field-set a {
+    text-decoration: none;
+    color: #3498db;
+    /* Link color */
+    margin-top: 10px;
+    display: block;
+}
+
+/* Hover effect for the link */
+.field-set a:hover {
+    color: #2980b9;
+    /* Darker blue on hover */
+}
