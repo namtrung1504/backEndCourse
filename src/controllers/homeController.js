@@ -1,7 +1,7 @@
+const connection = require("../config/database");
+
 const getHomePage = (req, res) => {
-  //process data
-  //call model
-  res.send("Express hihi");
+  return res.render("home.ejs");
 };
 
 const getABC = (req, res) => {
