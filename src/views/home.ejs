@@ -83,19 +83,19 @@
                         <%= index %>
                     </td>
                     <td>
-                        <%= user.id%>
+                        <%= user.id %>
                     </td>
                     <td>
-                        <%= user.email%>
+                        <%= user.email %>
                     </td>
                     <td>
-                        <%= user.name%>
+                        <%= user.name %>
                     </td>
                     <td>
-                        <%= user.city%>
+                        <%= user.city %>
                     </td>
                     <td>
-                        <a href="/update">Edit</a>
+                        <a href="/update/<%= user.id %>">Edit</a>
                         <button>Delete</button>
                     </td>
                     <% }); %>

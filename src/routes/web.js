@@ -22,6 +22,6 @@ router.post("/creat-user", postCreatUser);
 
 router.get("/creat", getCreatPage);
 
-router.get("/update", getUpdatePage);
+router.get("/update/:id", getUpdatePage);
 
 module.exports = router;
